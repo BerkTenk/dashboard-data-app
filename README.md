@@ -45,7 +45,7 @@ Make sure you have npm and Node.js installed. You can download them [here](https
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/your_username/your_repo_name.git
+   git clone https://github.com/BerkTenk/dashboard-data-app.git
 
 
 
