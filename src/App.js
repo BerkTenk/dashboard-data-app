@@ -19,7 +19,7 @@ function getRandomColor() {
 }
 
 function App() {
-  const dataOptions =[
+  const dataOptions = [
     'bitcoin', 'ethereum', 'ripple', 'litecoin', 'cardano', 
     'polkadot', 'binancecoin', 'tether', 'stellar', 'chainlink', 
     'dogecoin', 'solana', 'uniswap', 'aave', 'avalanche-2'
@@ -100,8 +100,6 @@ function App() {
             <Sidebar />
           </Col>
           <Col xs={10}>
-          <Row>
-            <Col xs={4} >
             <Form.Group controlId="dataSelect">
               <Form.Label>Select Data</Form.Label>
               <Form.Control as="select" onChange={handleDropdownChange}>
@@ -110,23 +108,19 @@ function App() {
                 ))}
               </Form.Control>
             </Form.Group>
-            </Col>
-            <Col xs={4}>
             <Form.Group controlId="daysSelect">
               <Form.Label>Select Days</Form.Label>
               <Form.Control type="number" value={days} onChange={handleDaysChange} />
             </Form.Group>
             {error && <Alert variant="danger">{error}</Alert>}
-            </Col>
-            </Row>
             <Row>
-              <Col xs={9} md={5} className='my-2' >
+              <Col xs={4}>
                 <BarChart chartData={userData} />
               </Col>
-              <Col xs={9} md={5} className='my-2'>
+              <Col xs={4}>
                 <LineChart chartData={userData} />
               </Col>
-              <Col xs={9} md={5} className='my-2'>
+              <Col xs={4}>
                 <PieChart chartData={userData} />
               </Col>
             </Row>
@@ -136,6 +130,5 @@ function App() {
     </div>
   );
 }
-
 
 export default App;
