@@ -30,8 +30,18 @@ This project is a cryptocurrency dashboard built with React, Bootstrap, Chart.js
 - [Bootstrap](https://getbootstrap.com/)
 - [React-Bootstrap](https://react-bootstrap.github.io/)
 - [Chart.js](https://www.chartjs.org/)
-- [React-Chartjs-2](https://react-chartjs-2.js.org/)
+- [React-Chartjs-2](https://www.npmjs.com/package/react-chartjs-2)
 - [Axios](https://axios-http.com/)
+
+## License
+
+Distributed under the MIT License. See LICENSE for more information.
+
+## Acknowledgements
+
+- [CoinGecko API](https://www.coingecko.com/en/api)
+
+- [React Icons](https://react-icons.github.io/react-icons/)
 
 ## Getting Started
 

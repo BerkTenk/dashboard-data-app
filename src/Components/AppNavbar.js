@@ -2,10 +2,6 @@ import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Logo from "../Assets/Logo.jpg"
-import Doctor from "../Assets/senior-woman-doctor-and-portrait-smile-for-health-2023-11-27-05-18-16-utc.jpg";
-import More from "../Assets/more.jpg";
-import Settings from "../Assets/settings.jpg";
 import { FaUser } from "react-icons/fa";
 import { CiSettings } from "react-icons/ci";
 import { BsThreeDotsVertical } from "react-icons/bs";
