@@ -8,8 +8,6 @@ This project is a cryptocurrency dashboard built with React, Bootstrap, Chart.js
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Demo

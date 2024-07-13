@@ -19,11 +19,11 @@ function getRandomColor() {
 }
 
 function App() {
-  const [dataOptions, setDataOptions] = useState([
+  const dataOptions =[
     'bitcoin', 'ethereum', 'ripple', 'litecoin', 'cardano', 
     'polkadot', 'binancecoin', 'tether', 'stellar', 'chainlink', 
     'dogecoin', 'solana', 'uniswap', 'aave', 'avalanche-2'
-  ]);
+  ];
   const [selectedData, setSelectedData] = useState('bitcoin');
   const [days, setDays] = useState(5);
   const [userData, setUserData] = useState({
