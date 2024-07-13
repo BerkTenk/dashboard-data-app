@@ -13,28 +13,31 @@ import { PiSketchLogoLight } from "react-icons/pi";
 
 function AppNavbar() {
   return (
-    <Navbar >
-    <Container style={{ display: 'flex', justifyContent: 'space-between' }}>
-      <Navbar.Brand href="/home">
-      <PiSketchLogoLight color='gold' size={70} />
-      </Navbar.Brand>
-      <Nav variant='pills'>
-        <Nav.Link href="/">Overview</Nav.Link>
-        <Nav.Link href="/schedule">Schedule</Nav.Link>
-        <Nav.Link href="/message">Message</Nav.Link>
-        <Nav.Link href="/transactions">Transactions</Nav.Link>
-      </Nav>
-      <Nav  style={{ display: 'flex', justifyContent: 'space-between', alignItems:"center" }}>
-        <FaUser size={28} className='mx-1'/>
-        <div className='mx-1'>
-          <b>Username</b>
-          <p>User Title</p>
-          </div>
-          <CiSettings className='mx-1' size={28}/>
-          <BsThreeDotsVertical size={28} />
-      </Nav>
-    </Container>
-  </Navbar>
+    <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+      <Container fluid>
+        <Navbar.Brand href="/home">
+          <PiSketchLogoLight color='gold' size={70} />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="m-auto">
+            <Nav.Link href="/">Overview</Nav.Link>
+            <Nav.Link href="/schedule">Schedule</Nav.Link>
+            <Nav.Link href="/message">Message</Nav.Link>
+            <Nav.Link href="/transactions">Transactions</Nav.Link>
+          </Nav>
+          <Nav className="d-flex align-items-center">
+            <FaUser size={28} className='mx-1' />
+            <div className='mx-1'>
+              <b>Username</b>
+              <p>User Title</p>
+            </div>
+            <CiSettings className='mx-1' size={28} />
+            <BsThreeDotsVertical size={28} />
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   )
 }
 

@@ -120,13 +120,13 @@ function App() {
             </Col>
             </Row>
             <Row>
-              <Col xs={9} md={4} className='my-2' >
+              <Col xs={9} md={5} className='my-2' >
                 <BarChart chartData={userData} />
               </Col>
-              <Col xs={9} md={4} className='my-2'>
+              <Col xs={9} md={5} className='my-2'>
                 <LineChart chartData={userData} />
               </Col>
-              <Col xs={9} md={4} className='my-2'>
+              <Col xs={9} md={5} className='my-2'>
                 <PieChart chartData={userData} />
               </Col>
             </Row>

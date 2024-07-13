@@ -1,3 +1,54 @@
+# Cryptocurrency Dashboard
+
+This project is a cryptocurrency dashboard built with React, Bootstrap, Chart.js, and Axios. It allows users to select different cryptocurrencies and view their price trends over a specified number of days using various chart types.
+
+## Table of Contents
+
+- [Demo](#demo)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Demo
+
+[Insert a link to a live demo or a screenshot of the application]
+
+## Features
+
+- Responsive navbar with user profile and settings.
+- Dynamic cryptocurrency data fetching from CoinGecko API.
+- Display of cryptocurrency price trends using bar, line, and pie charts.
+- User input for selecting the number of days to view data.
+- Dropdown for selecting different cryptocurrencies.
+
+## Technologies Used
+
+- [React](https://reactjs.org/)
+- [Bootstrap](https://getbootstrap.com/)
+- [React-Bootstrap](https://react-bootstrap.github.io/)
+- [Chart.js](https://www.chartjs.org/)
+- [React-Chartjs-2](https://react-chartjs-2.js.org/)
+- [Axios](https://axios-http.com/)
+
+## Getting Started
+
+To get a local copy up and running follow these simple steps.
+
+### Prerequisites
+
+Make sure you have npm and Node.js installed. You can download them [here](https://nodejs.org/).
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/your_username/your_repo_name.git
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
