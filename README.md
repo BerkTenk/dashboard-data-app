@@ -12,7 +12,7 @@ This project is a cryptocurrency dashboard built with React, Bootstrap, Chart.js
 
 ## Demo
 
-[Insert a link to a live demo or a screenshot of the application]
+[\[APP\]](https://dashboard-berktenk.netlify.app/)
 
 ## Features
 
