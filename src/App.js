@@ -120,13 +120,13 @@ function App() {
             {error && <Alert variant="danger">{error}</Alert>}
             </Row>
             <Row>
-              <Col xs={9} md={4} >
+              <Col xs={9} md={4} className='my-2' >
                 <BarChart chartData={userData} />
               </Col>
-              <Col xs={9} md={4}>
+              <Col xs={9} md={4} className='my-2'>
                 <LineChart chartData={userData} />
               </Col>
-              <Col xs={9} md={4}>
+              <Col xs={9} md={4} className='my-2'>
                 <PieChart chartData={userData} />
               </Col>
             </Row>
