@@ -100,6 +100,8 @@ function App() {
             <Sidebar />
           </Col>
           <Col xs={10}>
+          <Row>
+            <Col xs={4}>
             <Form.Group controlId="dataSelect">
               <Form.Label>Select Data</Form.Label>
               <Form.Control as="select" onChange={handleDropdownChange}>
@@ -108,11 +110,15 @@ function App() {
                 ))}
               </Form.Control>
             </Form.Group>
+            </Col>
+            <Col xs={4}>
             <Form.Group controlId="daysSelect">
               <Form.Label>Select Days</Form.Label>
               <Form.Control type="number" value={days} onChange={handleDaysChange} />
             </Form.Group>
+            </Col>
             {error && <Alert variant="danger">{error}</Alert>}
+            </Row>
             <Row>
               <Col xs={4}>
                 <BarChart chartData={userData} />
