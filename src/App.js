@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import AppNavbar from './Components/AppNavbar';
 import Sidebar from './Components/Sidebar';
 import { Col, Container, Row, Form, Alert } from 'react-bootstrap';
-import { useState, useEffect   } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import BarChart from './Components/BarChart';
 import LineChart from './Components/LineChart';
 import PieChart from './Components/PieChart';
@@ -41,7 +41,7 @@ function App() {
   const [error, setError] = useState(null);
   const [cachedData, setCachedData] = useState({});
 
-  const fetchData = (crypto, days) => {
+  const fetchData = useCallback((crypto, days) => {
     if (cachedData[crypto] && cachedData[crypto][days]) {
       setUserData(cachedData[crypto][days]);
     } else {
@@ -75,11 +75,11 @@ function App() {
           setError("API limit reached or there was an error fetching the data.");
         });
     }
-  };
+  }, [cachedData]);
 
   useEffect(() => {
     fetchData(selectedData, days);
-  }, [selectedData, days]);
+  }, [selectedData, days, fetchData]);
 
   const handleDropdownChange = (e) => {
     setSelectedData(e.target.value);
