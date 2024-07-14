@@ -96,12 +96,12 @@ function App() {
       </header>
       <Container fluid>
         <Row>
-          <Col xs={2}>
+          <Col xs={4} md={2}>
             <Sidebar />
           </Col>
-          <Col xs={10}>
+          <Col xs={8} md={10}>
           <Row>
-            <Col xs={4}>
+            <Col xs={6}>
             <Form.Group controlId="dataSelect">
               <Form.Label>Select Data</Form.Label>
               <Form.Control as="select" onChange={handleDropdownChange}>
@@ -111,7 +111,7 @@ function App() {
               </Form.Control>
             </Form.Group>
             </Col>
-            <Col xs={4}>
+            <Col xs={6}>
             <Form.Group controlId="daysSelect">
               <Form.Label>Select Days</Form.Label>
               <Form.Control type="number" value={days} onChange={handleDaysChange} />
