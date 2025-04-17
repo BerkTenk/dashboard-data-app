@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+    triggers {
+        // Periyodik tetikleyici (örneğin her gün saat 03:00'te)
+        cron('H 3 * * *')
+        // GitHub webhook tetikleyici
+        pollSCM('* * * * *') // her dakika kod değişikliği kontrolü (webhook varsa gerekmez)
+    }
+    stages {
+        stage('Checkout') {
+            steps {
+                git branch: 'master', url: 'https://github.com/BerkTenk/dashboard-data-app.git'
+            }
+        }
+        stage('Build') {
+            steps {
+                echo 'Build işlemi yapılıyor...'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Test işlemleri yapılıyor...'
+            }
+        }
+    }
+}
